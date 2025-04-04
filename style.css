@@ -130,10 +130,16 @@ footer {
 
 
 
-/* Menu Icon */
 .menu-icon {
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: white; /* Set toggle icon color to white */
+  background: #007bff; /* Button background */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* Dropdown Menu */
