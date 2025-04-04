@@ -128,15 +128,7 @@ footer {
   color: #FFD700; /* Gold color for PREP */
 }
 
-/* Navbar */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background: #222;
-  color: #fff;
-}
+
 
 /* Menu Icon */
 .menu-icon {
