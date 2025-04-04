@@ -109,46 +109,27 @@ footer {
   color: #fff;
 }
 
-/* Navbar */
+/* Keep existing navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: linear-gradient(to right, #4A90E2, #8E44AD); 
+    background: #4A90E2; /* Keep old background */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Stylized Text-Based Logo */
+/* Text-based logo */
 .logo {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 1px;
     color: white;
     text-transform: uppercase;
-    position: relative;
 }
 
+/* Make "Prep" a different color for contrast */
 .logo .highlight {
-    color: #FFD700; /* Gold for contrast */
-}
-
-/* Creative Text Effect */
-.logo span {
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Optional Animation */
-@keyframes logo-glow {
-    0% { text-shadow: 0 0 5px #FFD700; }
-    50% { text-shadow: 0 0 15px #FFA500; }
-    100% { text-shadow: 0 0 5px #FFD700; }
-}
-
-.logo:hover {
-    animation: logo-glow 1.5s infinite alternate;
+    color: #FFD700; /* Gold for a premium look */
 }
 
