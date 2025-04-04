@@ -136,7 +136,7 @@ footer {
 
 /* Creative Text Effect */
 .logo span {
-    background: linear-gradient(to right, #FFD700, #FFA500);
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
