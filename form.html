@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Interview Form</title>
+  <link rel="stylesheet" href="form-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="form-section">
+    <div class="container">
+      <h1>Generate Interview Questions</h1>
+      <p>Enter your job role, experience and JD below to get 10 tailored technical questions.</p>
+
+      <form action="#" method="POST" class="interview-form">
+        <label for="role">Job Role</label>
+        <input type="text" id="role" name="role" placeholder="e.g. Python Developer" required />
+
+        <label for="experience">Experience</label>
+        <input type="text" id="experience" name="experience" placeholder="e.g. 0-1 years" required />
+
+        <label for="jd">Job Description</label>
+        <textarea id="jd" name="jd" rows="6" placeholder="Paste the job description here..." required></textarea>
+
+        <button type="submit">Generate Questions</button>
+      </form>
+
+      <a class="back-link" href="index.html">← Back to Homepage</a>
+    </div>
+  </section>
+
+</body>
+</html>
