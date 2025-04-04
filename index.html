@@ -3,47 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Interview Q&A Generator</title>
+  <title>AI Interview Helper</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h1>Crack Your Next Interview with AI</h1>
-      <p>Enter your JD + experience and get tailored technical interview questions instantly</p>
-      <button onclick="scrollToForm()">Start Generating</button>
+      <h1>Level Up Your Interview Prep</h1>
+      <p>Get 100% tailored technical questions based on your job role and experience — powered by AI.</p>
+      <a href="form.html" class="cta-button">Launch AI Interview Helper</a>
     </div>
   </section>
 
-  <!-- Form Section -->
-  <section class="form-section" id="formSection">
-    <div class="container">
-      <h2>Enter Your Details</h2>
-      <form id="qaForm">
-        <div class="input-group">
-          <input type="text" id="role" required />
-          <label for="role">Job Role</label>
-        </div>
-        <div class="input-group">
-          <textarea id="jd" rows="4" required></textarea>
-          <label for="jd">Job Description</label>
-        </div>
-        <div class="input-group">
-          <textarea id="background" rows="4" required></textarea>
-          <label for="background">Your Background</label>
-        </div>
-        <button type="submit">Generate Questions</button>
-      </form>
-      <div class="output" id="output"></div>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>Custom Questions</h3>
+      <p>Questions generated based on your job description and resume. No generic stuff!</p>
+    </div>
+    <div class="feature-card">
+      <h3>Fresher-Friendly</h3>
+      <p>Built for freshers and junior devs. Smart suggestions with zero guesswork.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Instant Results</h3>
+      <p>Get interview questions in seconds — anytime, anywhere.</p>
     </div>
   </section>
 
-  <script>
-    function scrollToForm() {
-      document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <p>Enter Job Role, JD & Your Experience</p>
+      </div>
+      <div class="step">
+        <span>2</span>
+        <p>Click "Generate Questions"</p>
+      </div>
+      <div class="step">
+        <span>3</span>
+        <p>Get 10 personalized interview Q&A instantly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AI Interview Helper | Designed with love</p>
+  </footer>
+
 </body>
 </html>
