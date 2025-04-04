@@ -5,35 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Interview Q&A Generator</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="wrapper">
-    <h1>AI Interview Q&A Generator</h1>
-    <p class="subtitle">Get 10 technical interview questions & sample answers based on your job role and experience</p>
-    
-    <form id="qaForm">
-      <div class="input-group">
-        <label for="jobRole">Job Role</label>
-        <input type="text" id="jobRole" placeholder="e.g. Frontend Developer Intern" required />
-      </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Crack Your Next Interview with AI</h1>
+      <p>Enter your JD + experience and get tailored technical interview questions instantly</p>
+      <button onclick="scrollToForm()">Start Generating</button>
+    </div>
+  </section>
 
-      <div class="input-group">
-        <label for="jd">Job Description</label>
-        <textarea id="jd" rows="5" placeholder="Paste JD here..." required></textarea>
-      </div>
+  <!-- Form Section -->
+  <section class="form-section" id="formSection">
+    <div class="container">
+      <h2>Enter Your Details</h2>
+      <form id="qaForm">
+        <div class="input-group">
+          <input type="text" id="role" required />
+          <label for="role">Job Role</label>
+        </div>
+        <div class="input-group">
+          <textarea id="jd" rows="4" required></textarea>
+          <label for="jd">Job Description</label>
+        </div>
+        <div class="input-group">
+          <textarea id="background" rows="4" required></textarea>
+          <label for="background">Your Background</label>
+        </div>
+        <button type="submit">Generate Questions</button>
+      </form>
+      <div class="output" id="output"></div>
+    </div>
+  </section>
 
-      <div class="input-group">
-        <label for="background">Candidate Background</label>
-        <textarea id="background" rows="5" placeholder="Paste experience or resume summary..." required></textarea>
-      </div>
-
-      <button type="submit" id="generateBtn">Generate Q&A</button>
-    </form>
-
-    <div id="loader" class="loader hidden"></div>
-    <div id="output" class="qa-output"></div>
-  </div>
-
-  <script src="script.js"></script>
+  <script>
+    function scrollToForm() {
+      document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
