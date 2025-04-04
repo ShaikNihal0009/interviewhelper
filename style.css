@@ -109,27 +109,21 @@ footer {
   color: #fff;
 }
 
-/* Keep existing navbar styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: #4A90E2; /* Keep old background */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+/* Apply background gradient to header */
+.site-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Same gradient as hero */
+  padding: 20px;
+  text-align: left;
 }
 
-/* Text-based logo */
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-transform: uppercase;
+/* IntelliPrep Styling */
+.brand-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 20px;
 }
 
-/* Make "Prep" a different color for contrast */
-.logo .highlight {
-    color: #FFD700; /* Gold for a premium look */
+.highlight {
+  color: #FFD700; /* Gold color for PREP */
 }
-
