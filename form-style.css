@@ -96,22 +96,30 @@ body {
   color: #66a6ff;
 }
 
-/* Apply background gradient to header */
 .site-header {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Same gradient as hero */
-  padding: 20px;
-  text-align: left;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* IntelliPrep Styling */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* align left */
+}
+
 .brand-name {
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-left: 20px;
+  font-weight: bold;
+  color: #222;
 }
 
-.highlight {
-  color: #FFD700; /* Gold color for PREP */
+.brand-name .highlight {
+  color: #007BFF; /* Or your brand's highlight color */
 }
+
 
