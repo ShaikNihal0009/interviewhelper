@@ -1,93 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | IntelliPrep</title>
-    <style>
-      body {
-  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-  color: #222;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-        .container {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 40px;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-        h1 {
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            margin: 20px 0;
-            font-size: 18px;
-        }
-        .contact-info div {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: white;
-            color: #6a11cb;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 25px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #ddd;
-        }
-        .site-header {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  padding: 30px 0;
-  text-align: center;
-}
-
-/* IntelliPrep Styling */
-.brand-name {
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-left: 20px;
-}
-
-.highlight {
-  color: #FFD700;
-}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - IntelliPrep</title>
+  <link rel="stylesheet" href="form-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header class="site-header">
-  <h1 class="brand-name">INTELLI<span class="highlight">PREP</span></h1>
-</header>
+
+  <header class="site-header">
+    <h1 class="brand-name">INTELLI<span class="highlight">PREP</span></h1>
+  </header>
+
+  <section class="form-section">
     <div class="container">
-        <h1>Contact Us</h1>
-        <p>We're here to help! Reach out to us anytime.</p>
-        <div class="contact-info">
-            <div>
-                📧 Email: <strong>support@intelliprep.com</strong>
-            </div>
-            <div>
-                📞 Phone: <strong>+1 (123) 456-7890</strong>
-            </div>
-            <div>
-                📍 Address: <strong>123 IntelliPrep Street, Tech City</strong>
-            </div>
-        </div>
-        <a href="index.html" class="btn">🏠 Back to Home</a>
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Reach out to us via the details below:</p>
+
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:support@intelliprep.com">support@intelliprep.com</a></p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Address:</strong> 123, Knowledge Lane, Tech City, India</p>
+      </div>
+
+      <a class="back-link" href="index.html">← Back to Homepage</a>
     </div>
+  </section>
+
 </body>
 </html>
