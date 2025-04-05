@@ -97,30 +97,22 @@ body {
 }
 
 .site-header {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Match homepage hero gradient */
-  padding: 30px 0; /* Give vertical spacing */
-  display: flex;
-  justify-content: center; /* Center the inner content horizontally */
-}
-
-.site-header .container {
-  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
-  padding: 20px 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px); /* Optional glassmorphism */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 30px 0;
+  text-align: center;
 }
 
 .brand-name {
   font-size: 32px;
   font-weight: 800;
-  color: #1a1a1a; /* Darker for better contrast */
+  color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
 .highlight {
-  color: #FFD700; /* Gold color for PREP */
+  color: #FFD700;
 }
+
 
 
 
