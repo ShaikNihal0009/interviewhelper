@@ -102,11 +102,12 @@ body {
   text-align: center;
 }
 
+/* IntelliPrep Styling */
 .brand-name {
-  font-size: 32px;
-  font-weight: 800;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 20px;
 }
 
 .highlight {
