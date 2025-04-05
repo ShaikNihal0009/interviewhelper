@@ -89,26 +89,26 @@ body {
 }
 
 .skill-gaps-section {
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #f0f4ff, #e3efff);
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffe0cc, #ffd5bb);
   text-align: center;
 }
 
 .skill-gaps-section h2 {
   font-size: 2rem;
-  color: #1a1a1a;
+  color: #2c2c2c;
   margin-bottom: 30px;
 }
 
 .skill-gap-card {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   max-width: 800px;
-  margin: 20px auto;
-  padding: 25px;
+  margin: 30px auto;
+  padding: 30px;
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .skill-gap-card:hover {
@@ -116,25 +116,27 @@ body {
 }
 
 .skill-gap-card h3 {
+  font-size: 1.4rem;
   color: #333;
-  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.skill-gap-card p, .skill-gap-card ul {
+.skill-gap-card p {
+  font-size: 1rem;
   color: #444;
-  line-height: 1.6;
+  margin: 10px 0;
 }
 
-.skill-gap-card ul {
-  padding-left: 20px;
+.resource-list p {
+  margin: 8px 0;
 }
 
-.skill-gap-card a {
+.resource-list a {
   color: #0066cc;
   text-decoration: none;
+  font-weight: 500;
 }
 
-.skill-gap-card a:hover {
+.resource-list a:hover {
   text-decoration: underline;
 }
