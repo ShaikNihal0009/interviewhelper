@@ -1,89 +1,14 @@
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
-body {
-  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-  color: #222;
-  overflow-x: hidden;
-}
-
-/* Header Styling */
-.site-header {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  padding: 20px;
-  text-align: left;
-}
-
-.brand-name {
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-  margin-left: 20px;
-}
-
-.highlight {
-  color: #FFD700;
-}
-
-.home-button {
-  float: right;
-  margin-right: 20px;
-  margin-top: -30px;
-  background: white;
-  color: #2575fc;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.home-button:hover {
-  background: #f0f0f0;
-}
-
-/* Contact Section */
-.contact-section {
-  padding: 100px 20px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(6px);
-  border-radius: 12px;
-  margin: 60px auto;
-  width: 80%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section h2 {
-  font-size: 2.5rem;
-  color: #764ba2;
-  margin-bottom: 20px;
-}
-
-.contact-section p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-/* Contact Details */
-.contact-details {
-  text-align: left;
-  margin-top: 30px;
+.contact-details p {
+  margin: 15px 0;
   font-size: 1rem;
   color: #333;
-  padding: 0 20px;
-  line-height: 1.6;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #764ba2;
-  color: #fff;
+.contact-details a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
 }
