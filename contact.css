@@ -1,71 +1,89 @@
-/* General Styles */
-body {
-  font-family: 'Inter', sans-serif;
+/* Reset & Base Styles */
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #007bff, #0056b3);
-  color: #fff;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Navbar */
+body {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
 .site-header {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  text-align: left;
 }
 
 .brand-name {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  color: white;
+  margin-left: 20px;
 }
 
 .highlight {
-  color: yellow;
+  color: #FFD700;
 }
 
-/* Home Button */
 .home-button {
-  text-decoration: none;
-  color: white;
-  background: yellow;
-  padding: 8px 15px;
-  border-radius: 5px;
+  float: right;
+  margin-right: 20px;
+  margin-top: -30px;
+  background: white;
+  color: #2575fc;
+  padding: 8px 16px;
+  border-radius: 20px;
   font-weight: bold;
+  text-decoration: none;
   transition: background 0.3s ease;
 }
 
 .home-button:hover {
-  background: orange;
+  background: #f0f0f0;
 }
 
 /* Contact Section */
 .contact-section {
+  padding: 100px 20px;
   text-align: center;
-  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  margin: 60px auto;
+  width: 80%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: yellow;
+  font-size: 2.5rem;
+  color: #764ba2;
+  margin-bottom: 20px;
 }
 
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Contact Details */
 .contact-details {
-  margin-top: 20px;
-}
-
-.contact-details p {
-  font-size: 16px;
-  color: #fff;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #333;
+  padding: 0 20px;
+  line-height: 1.6;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px 0;
-  margin-top: 50px;
+  padding: 30px 0;
+  background-color: #764ba2;
+  color: #fff;
 }
