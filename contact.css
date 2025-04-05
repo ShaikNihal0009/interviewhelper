@@ -12,3 +12,10 @@
 .contact-details a:hover {
   text-decoration: underline;
 }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #764ba2;
+  color: #fff;
+}
