@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generated Interview Questions</title>
+  <link rel="stylesheet" href="questions-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="form-section">
+    <div class="container">
+      <h1>Your Interview Questions</h1>
+      <p>Click "Show Answer" to reveal model answers for each question.</p>
+
+      <!-- Question Cards -->
+      <div id="question-list">
+        <div class="question-card">
+          <div class="question">1. What are Python decorators and how are they used?</div>
+          <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+          <div class="answer">A decorator in Python is a function that modifies the behavior of another function. It is often used for logging, authentication, etc.</div>
+        </div>
+
+        <div class="question-card">
+          <div class="question">2. Explain the difference between list and tuple in Python.</div>
+          <button class="toggle-btn" onclick="toggleAnswer(this)">Show Answer</button>
+          <div class="answer">Lists are mutable while tuples are immutable. Lists use more memory and are slower than tuples.</div>
+        </div>
+
+        <!-- Add 8 more question-answer cards here as needed -->
+      </div>
+
+      <a class="back-link" href="form.html">← Back to Form</a>
+    </div>
+  </section>
+
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        button.innerText = "Show Answer";
+      } else {
+        answer.style.display = "block";
+        button.innerText = "Hide Answer";
+      }
+    }
+  </script>
+</body>
+</html>
