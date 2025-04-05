@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - IntelliPrep</title>
-  <link rel="stylesheet" href="contact.css"> <!-- Linking separate CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | IntelliPrep</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .contact-info div {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ddd;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header class="site-header">
     <div class="container">
-      <h1 class="brand-name">INTELLI<span class="highlight">PREP</span></h1>
-      <a href="index.html" class="home-button">Home</a>
+        <h1>Contact Us</h1>
+        <p>We're here to help! Reach out to us anytime.</p>
+        <div class="contact-info">
+            <div>
+                📧 Email: <strong>support@intelliprep.com</strong>
+            </div>
+            <div>
+                📞 Phone: <strong>+1 (123) 456-7890</strong>
+            </div>
+            <div>
+                📍 Address: <strong>123 IntelliPrep Street, Tech City</strong>
+            </div>
+        </div>
+        <a href="index.html" class="btn">🏠 Back to Home</a>
     </div>
-  </header>
-
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions? Reach out to us!</p>
-
-      <!-- Contact Details -->
-      <div class="contact-details">
-        <p><strong>Email:</strong> support@intelliprep.com</p>
-        <p><strong>Phone:</strong> +1 234 567 890</p>
-        <p><strong>Address:</strong> 123 AI Street, Tech City, 45678</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 IntelliPrep | All rights reserved.</p>
-  </footer>
-
 </body>
 </html>
