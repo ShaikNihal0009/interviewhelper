@@ -87,3 +87,54 @@ body {
 .back-link:hover {
   color: #66a6ff;
 }
+
+.skill-gaps-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #e3efff);
+  text-align: center;
+}
+
+.skill-gaps-section h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.skill-gap-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.skill-gap-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-gap-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.skill-gap-card p, .skill-gap-card ul {
+  color: #444;
+  line-height: 1.6;
+}
+
+.skill-gap-card ul {
+  padding-left: 20px;
+}
+
+.skill-gap-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.skill-gap-card a:hover {
+  text-decoration: underline;
+}
