@@ -232,7 +232,7 @@ footer {
 .company-logos h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #333;
 }
 
@@ -240,18 +240,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .logos img {
-  height: 40px;
+  height: 30px; /* Reduced from 40px */
   object-fit: contain;
   filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .logos img:hover {
   filter: grayscale(0%);
+  transform: scale(1.05);
 }
-
-
