@@ -247,12 +247,10 @@ footer {
   height: 40px;        /* Unified fixed height */
   max-width: 150px;    /* Prevents oversized width */
   object-fit: contain; /* Keeps image ratio clean */
-  filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .logos img:hover {
-  filter: grayscale(0%);
   transform: scale(1.05);
 }
 
