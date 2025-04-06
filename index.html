@@ -51,6 +51,20 @@
     </div>
   </section>
 
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat-box">
+      <h2 class="count" data-target="1000">0</h2>
+      <p>Unique Users</p>
+    </div>
+    <div class="stat-box">
+      <h2 class="count" data-target="12000">0</h2>
+      <p>Questions Generated</p>
+    </div>
+  </div>
+</section>
+
+  
   <!-- How It Works -->
   <section class="how-it-works" id="how-it-works">
     <h2>How It Works</h2>
@@ -79,6 +93,42 @@
       var menu = document.getElementById("dropdownMenu");
       menu.classList.toggle("show");
     }
+<script>
+  const counters = document.querySelectorAll('.count');
+  let started = false;
+
+  const runCounter = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 100;
+
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCount, 20); // controls speed
+        } else {
+          counter.innerText = target.toLocaleString();
+        }
+      };
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        runCounter();
+        observer.disconnect(); // only run once
+      }
+    });
+  });
+
+  observer.observe(document.querySelector('.stats-section'));
+</script>
+
+  
   </script>
 </body>
 </html>
