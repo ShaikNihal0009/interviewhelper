@@ -244,8 +244,9 @@ footer {
 }
 
 .logos img {
-  height: 30px; /* Reduced from 40px */
-  object-fit: contain;
+  height: 40px;        /* Unified fixed height */
+  max-width: 150px;    /* Prevents oversized width */
+  object-fit: contain; /* Keeps image ratio clean */
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
@@ -254,3 +255,4 @@ footer {
   filter: grayscale(0%);
   transform: scale(1.05);
 }
+
