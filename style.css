@@ -69,7 +69,8 @@ body {
 
 /* How it works */
 .how-it-works {
-  background-color: #fdfdfd;
+  /*background-color: #fdfdfd;*/
+  background-color: #f9f9f9;
   padding: 60px 20px;
   text-align: center;
 }
