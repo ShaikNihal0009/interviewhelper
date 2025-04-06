@@ -69,8 +69,7 @@ body {
 
 /* How it works */
 .how-it-works {
-  /*background-color: #fdfdfd;*/
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
   padding: 60px 20px;
   text-align: center;
 }
@@ -180,7 +179,7 @@ footer {
 }
 
 .stats-section {
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: #fdfdfd;
   padding: 60px 20px;
   text-align: center;
 }
@@ -226,7 +225,7 @@ footer {
 
 .company-logos {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
   text-align: center;
 }
 
