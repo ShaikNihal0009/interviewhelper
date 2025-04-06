@@ -178,9 +178,39 @@ footer {
   background: #f5f5f5;
 }
 
+.stats-section {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
 .stat-box h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #2575fc;
+  margin-bottom: 10px;
 }
 
+.stat-box p {
+  font-size: 1.1rem;
+  color: #333;
+}
