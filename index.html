@@ -64,6 +64,7 @@
   </div>
 </section>
 
+
   
   <!-- How It Works -->
   <section class="how-it-works" id="how-it-works">
@@ -101,14 +102,14 @@
     counters.forEach(counter => {
       const updateCount = () => {
         const target = +counter.getAttribute('data-target');
-        const current = +counter.innerText;
+        const current = +counter.innerText.replace("+", "").replace(",", "");
         const increment = target / 100;
 
         if (current < target) {
-          counter.innerText = Math.ceil(current + increment);
-          setTimeout(updateCount, 20); // controls speed
+          counter.innerText = Math.ceil(current + increment).toLocaleString() + "+";
+          setTimeout(updateCount, 20);
         } else {
-          counter.innerText = target.toLocaleString();
+          counter.innerText = target.toLocaleString() + "+";
         }
       };
       updateCount();
@@ -120,7 +121,7 @@
       if (entry.isIntersecting && !started) {
         started = true;
         runCounter();
-        observer.disconnect(); // only run once
+        observer.disconnect();
       }
     });
   });
