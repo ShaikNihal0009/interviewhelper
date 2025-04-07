@@ -167,3 +167,20 @@ footer {
   background-color: #764ba2;
   color: #fff;
 }
+
+.logos img {
+  height: 40px;        /* Unified fixed height */
+  max-width: 150px;    /* Prevents oversized width */
+  object-fit: contain; /* Keeps image ratio clean */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  height: 32px; /* Adjust size as needed */
+  vertical-align: middle;
+  margin-right: 10px;
+}
