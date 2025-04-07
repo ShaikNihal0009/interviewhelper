@@ -111,7 +111,7 @@ footer {
 
 /* Apply background gradient to header */
 .site-header {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Same gradient as hero */
+  background: #ffffff; /*linear-gradient(135deg, #6a11cb, #2575fc); */ /* Same gradient as hero */
   padding: 20px;
   text-align: left;
 }
