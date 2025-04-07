@@ -132,4 +132,9 @@ footer {
   transform: scale(1.05);
 }
 
+.logo {
+  height: 32px; /* Adjust size as needed */
+  vertical-align: middle;
+  margin-right: 10px;
+}p
 
